@@ -1,5 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+ }
+ .nav-links{
+    display: flex;
+
+ }
+ .nav-item{
+    list-style: none;
+ }
+ .nav-link{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1rem;
+ }
+ .navbar , .banner{
+    margin: 0 auto;
+    background-color: rgba(255, 144, 14, 0.1);
+    max-width: 1440px;
+    
+ }
+ .brand{
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 53px;
+ }
+ 
+
+/* banner
+
+
+*/
+
+.banner-content{
+    max-width: 850px;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto
+}
+.banner-content h2{
+    font-size: 3.9rem;
+    font-weight: 700;
+}
+.banner-content p{
+    font-size: 1rem;
+    opacity: 0.6;
+    padding: 10px 0;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(255, 144, 14);
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.banner-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+} 
